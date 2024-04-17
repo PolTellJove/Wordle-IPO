@@ -59,7 +59,7 @@
             <?php
                 function getRandomLine($filename) { 
                     $lines = file($filename); 
-                    return strtoupper(substr($lines[array_rand($lines)],0,-1)); //ARREGLAR -1 O -2
+                    return strtoupper(substr($lines[array_rand($lines)],0,5)); //ARREGLAR -1 O -2 (HE POSAT QUE AGAFI LES 5 PRIMERES LLETRES)
                 }
                     $randomWord = getRandomLine($lang['file']);
             ?>
